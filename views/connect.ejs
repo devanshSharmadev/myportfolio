@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style type="text/css">
+  body {
+      background-color: #2f3542;
+    }
+    .header{
+      width: 100%;
+      float: left;
+      background-color: #00a8ff;
+    }
+    .lefthdr{
+      width:40%;
+      float: left;
+      background-color: #34495e;
+
+    }
+    .righthdr{
+      width:60%;
+      float: left;
+      background-color: #00a8ff;
+      padding-top: 5px;
+
+    }
+    .nav1{
+      width: 20%;
+      float: left;
+      text-align: center;
+    }
+    
+    .hdrname1
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#e84118;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+
+    }
+    .hdrname1:hover{
+      color:#c23616;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname2
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#00a8ff;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname2:hover{
+      color:#0097e6;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname3
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#fbc531;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname3:hover{
+      color:#e1b12c;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname4
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#4cd137;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname4:hover{
+      color:#44bd32;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname5
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#273c75;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname5:hover{
+      color:#192a56;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname6
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#f5f6fa;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname6:hover{
+      color:#dcdde1;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname7
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#7f8fa6;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname7:hover{
+      color:#718093;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname8
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#00a8ff;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname8:hover{
+      color:#079992;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname9
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#5f27cd;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname9:hover{
+      color:#341f97;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname10
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#B33771;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname10:hover{
+      color:#6D214F;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname11
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#fffa65;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname11:hover{
+      color:#fff200;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname12
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#38ada9;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname12:hover{
+      color:#079992;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname13
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#1e3799;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname13:hover{
+      color:#0c2461;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .hdrname14
+    {
+      width: 7.14285714%;
+      float: left;
+      text-align: center;
+      color:#eb2f06;
+      font-size: 18.72px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hdrname14:hover{
+      color:#b71540;
+      font-size: 19px;
+      text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    }
+    .anav{
+      color: #f5f6fa;
+      
+
+    }
+    .anav:hover{
+      color: #535c68;
+      text-decoration: none;
+
+    }
+    .article{
+      width: 100%;
+      float: left;
+    }
+    .asidel{
+      width: 40%;
+      float: left;
+
+    }
+    .asider{
+      width: 60%;
+      float: left;
+    }
+    .bgtxt{
+      font-family:'Courier New', monospace;
+      font-size: 36px;
+    }
+    .bgtxt2{
+      font-size: 48px;
+      color: #f5f6fa;
+    }
+    .heading1{
+        color: white;
+        background-color: #C4E538;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 5px;
+        
+    }
+    .articlel{
+      width: 50%;
+      float: left;
+      padding: 10px;
+      
+    }
+    .articler{
+      width: 50%;
+      float: left;
+    }
+    .smcard1{
+      width: 46%;
+      float: left;
+      background-color:#e84118;
+      margin: 2%;
+      border-radius: 5px;
+      box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+      
+    }
+    .smhd1{
+      background-color:#c23616;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      text-align: center;
+      padding: 5px;
+      border:white;
+    }
+    .smcard2{
+      width: 46%;
+      float: left;
+      background-color:#4cd137;
+      margin: 2%;
+      border-radius: 5px;
+      box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+      
+    }
+    .smhd2{
+      background-color:#44bd32;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      text-align: center;
+      padding: 5px;
+      border:white;
+    }
+    .smcard3{
+      width: 46%;
+      float: left;
+      background-color:#487eb0;
+      margin: 2%;
+      border-radius: 5px;
+      box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+      
+    }
+    .smhd3{
+      background-color:#40739e;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      text-align: center;
+      padding: 5px;
+      border:white;
+    }
+    .smcard4{
+      width: 46%;
+      float: left;
+      background-color:#273c75;
+      margin: 2%;
+      border-radius: 5px;
+      box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+      
+    }
+    .smhd4{
+      background-color:#192a56;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      text-align: center;
+      padding: 5px;
+      border:white;
+    }
+    .smcard5{
+      width: 46%;
+      float: left;
+      background-color:#C13584;
+      margin: 2%;
+      border-radius: 5px;
+      box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+      
+    }
+    .smhd5{
+      background-color:#833AB4;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      text-align: center;
+      padding: 5px;
+      border:white;
+    }
+    .smcard6{
+      width: 46%;
+      float: left;
+      background-color:#00a8ff;
+      margin: 2%;
+      border-radius: 5px;
+      box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+      
+    }
+    .smhd6{
+      background-color:#0097e6;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      text-align: center;
+      padding: 5px;
+      border:white;
+    }
+  </style>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="icon" type="image/x-icon" href="/images/stark.png">
+  </head>
+  <body style="background-color:#161616;">
+    <div class="header">
+      <div class="lefthdr">
+        <div class="hdrname1">
+          <h3><b>D</b></h3>
+        </div>
+        <div class="hdrname2">
+          <h3><b>E</b></h3>
+        </div>
+        <div class="hdrname3">
+          <h3><b>V</b></h3>
+        </div>
+        <div class="hdrname4">
+          <h3><b>A</b></h3>
+        </div>
+        <div class="hdrname5">
+          <h3><b>N</b></h3>
+        </div>
+        <div class="hdrname6">
+          <h3><b>S</b></h3>
+        </div>
+        <div class="hdrname7">
+          <h3><b>H</b></h3>
+        </div>
+        <div class="hdrname8">
+          <h3><b> </b></h3>
+        </div>
+        <div class="hdrname9">
+          <h3><b>S</b></h3>
+        </div>
+        <div class="hdrname10">
+          <h3><b>H</b></h3>
+        </div>
+        <div class="hdrname11">
+          <h3><b>A</b></h3>
+        </div>
+        <div class="hdrname12">
+          <h3><b>R</b></h3>
+        </div>
+        <div class="hdrname13">
+          <h3><b>M</b></h3>
+        </div>
+        <div class="hdrname14">
+          <h3><b>A</b></h3>
+        </div>
+      </div>
+      <div class="righthdr">
+        <div class="nav1">
+          <a href="/" class="anav">HOME</a>
+        </div>
+        <div class="nav1">
+          <a href="/aboutme" class="anav">ABOUT ME</a>
+        </div>
+        <div class="nav1">
+          <a href="/myskills" class="anav">MY SKILLS</a>
+        </div>
+        <div class="nav1">
+          <a href="/myworks" class="anav">MY WORKS</a>
+        </div>
+        <div class="nav1">
+          <a href="/connect" class="anav">📍CONNECT</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="article">
+        <header class="heading1">
+            <center>
+            <h1>Just CONNECT With me...👇🏻</h1>
+        </center>
+        </header>
+
+        <div class="articlel">
+          <img src="/images/dp.jpeg" width="100%" height="750px" style="border-radius: 7px; box-shadow:  0px 4px 3px rgba(0,0,0,0.4),
+          0px 8px 13px rgba(0,0,0,0.1),
+          0px 18px 23px rgba(0,0,0,0.1);">
+        </div>
+        <div class="articler">
+          <div class="smcard1">
+            <div class="smhd1">
+              <h4>E-mail</h4>
+            </div>
+            <center>
+            <i class="fa fa-envelope" aria-hidden="true" ></i>
+          </center>
+          <p style="padding: 5px;"><b>Gmail ID:</b> devanshsharmadev007@gmail.com</p>
+          <center>
+            <a href = "mailto: devanshsharmadev007@gmail.com" class="btn btn-light">Send Email</a>
+          </center>
+          <br>
+
+            
+          </div>
+
+          <div class="smcard2">
+            <div class="smhd2">
+              <h4>Contact</h4>
+            </div>
+            <center>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </center>
+          <p style="padding: 5px;"><b>Contact No:</b> 8305891569</p>
+          <center>
+            <a href="tel:+91-8305891569" class="btn btn-light">Call</a>
+          </center>
+          <br>
+          </div>
+          <div class="smcard3">
+            <div class="smhd3">
+              <h4>Linkedin</h4>
+            </div>
+            <center>
+              <i class="fab fa-linkedin"></i>
+            </center>
+            <p style="padding: 5px;"><b>ID:</b> Devansh Sharma</p>
+            <center>
+              <a href="https://www.linkedin.com/in/devansh-sharma-12bb87192/" class="btn btn-light">Connect</a>
+            </center>
+            <br>
+            
+            
+          </div>
+          <div class="smcard4">
+            <div class="smhd4">
+              <h4>Github</h4>
+            </div>
+            
+            <center>
+              <i class="fab fa-github"></i>
+            </center>
+            <p style="padding: 5px;"><b>ID:</b> devanshSharmadev</p>
+            <center>
+              <a href="https://github.com/devanshSharmadev" class="btn btn-light">Follow</a>
+            </center>
+            <br>
+          </div>
+          <div class="smcard5">
+            <div class="smhd5">
+              <h4>Instagram</h4>
+            </div>
+            
+            <center>
+              <i class="fab fa-instagram"></i>
+            </center>
+            <p style="padding: 5px;"><b>ID:</b> @baba_bawandarnath_2.0
+            </p>
+            <center>
+              <a href="https://www.instagram.com/baba_bawandarnath_2.0/" class="btn btn-light">Follow</a>
+            </center>
+            <br>
+          </div>
+          <div class="smcard6">
+            
+            <div class="smhd6">
+              <h4>Twitter</h4>
+            </div>
+            <center>
+              <i class="fab fa-twitter"></i>
+            </center>
+            <p style="padding: 5px;"><b>ID:</b>@DevanshSpeak
+            </p>
+            <center>
+              <a href="https://twitter.com/DevanshSpeak" class="btn btn-light">Follow</a>
+            </center>
+            <br>
+          </div>
+        </div>
+    </div>
+    
+  
+  </body>
+</html>
